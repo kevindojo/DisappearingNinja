@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="DisappearingNinja" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Disappearing Ninja</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <script type="text/javascript">
+        $(document).ready(function(){
+            
+            $("img").click(function(){
+                $(this).hide();
+            })
+            $("#show").click(function(){
+                $("img").show();
+            })
+
+        });
+    </script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td><img class ="spider1" src="Spider.JPEG" alt="Spiderman" width="100" height="100"></td>
+            <td><img class ="spider2"src="Spider.JPEG" alt="Spiderman" width="100" height="100"></td>
+            <td><img class ="spider3"src="Spider.JPEG" alt="Spiderman" width="100" height="100"></td>
+            <td><img class ="spider4"src="Spider.JPEG" alt="Spiderman" width="100" height="100"></td>
+        </tr>
+        <tr>
+            <td><img class ="spider5"src="Spider.JPEG" alt="Spiderman" width="100" height="100"></td>
+            <td><img class ="spider6"src="Spider.JPEG" alt="Spiderman" width="100" height="100"></td>
+            <td><img class ="spider7"src="Spider.JPEG" alt="Spiderman" width="100" height="100"></td>
+            <td><img class ="spider8"src="Spider.JPEG" alt="Spiderman" width="100" height="100"></td>
+        </tr>
+    </table>
+    <div>
+        <button id="show">RESTORE</button>
+    </div>
+</body>
+</html>
